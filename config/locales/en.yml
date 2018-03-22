@@ -1,5 +1,7 @@
 
 en:
+  title: "Page"
+  title_content: "Ruby on Rails Tutorial TestAPP"
   static_pages:
     home:
       title: "Home Page"
