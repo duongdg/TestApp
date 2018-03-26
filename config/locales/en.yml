@@ -2,11 +2,38 @@
 en:
   title: "Page"
   title_content: "Ruby on Rails Tutorial TestAPP"
+  about: "About"
+  contact: "Contact"
+  home: "Home"
+  help: "Help"
+  login: "Log in"
+  new: "News"
+  testapp: "Test App"
+
   static_pages:
     home:
       title: "Home Page"
       hello: "Hello, I'm homepage. Wellcome!"
       email: "Ruby on Rails Tutorial"
+      tetsapp: "test app."
+      sigup: "Sing up now!"
+
     help:
       help: "Wellcome Help Page"
+
+    contact:
+      contact: "Contact Page"
+      content_contact1: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      content_contact2: "contact page"
+  layouts:
+    _footer:
+      the: "the"
+      myname: "Michael Hartl"
+      by: "by"
+    new:
+      sigup: "Sing up"
+      content_new: "This will be a signup page for new users."
+
+
+
 
