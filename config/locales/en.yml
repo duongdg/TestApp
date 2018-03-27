@@ -8,6 +8,7 @@ en:
   help: "Help"
   login: "Log in"
   new: "News"
+  no_user: "No User!"
   testapp: "Test App"
 
   static_pages:
@@ -30,9 +31,16 @@ en:
       the: "the"
       myname: "Michael Hartl"
       by: "by"
+
+  users:
     new:
-      sigup: "Sing up"
+      sigup: "Sign up"
       content_new: "This will be a signup page for new users."
+      create_account: "Create my account"
+      confirm: "Confirmation"
+
+    _error_messages:
+      _error_content: "The form contains"
 
 
 
