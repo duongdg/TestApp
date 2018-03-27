@@ -1,4 +1,3 @@
-
 en:
   title: "Page"
   title_content: "Ruby on Rails Tutorial TestAPP"
@@ -8,9 +7,12 @@ en:
   help: "Help"
   login: "Log in"
   new: "News"
+  users1: "Users"
   no_user: "No User!"
   testapp: "Test App"
-
+  profile: "Profile"
+  setting: "Settings"
+  logout: "Log out"
   static_pages:
     home:
       title: "Home Page"
@@ -18,10 +20,8 @@ en:
       email: "Ruby on Rails Tutorial"
       tetsapp: "test app."
       sigup: "Sing up now!"
-
     help:
       help: "Wellcome Help Page"
-
     contact:
       contact: "Contact Page"
       content_contact1: "Contact the Ruby on Rails Tutorial about the sample app at the"
@@ -31,17 +31,19 @@ en:
       the: "the"
       myname: "Michael Hartl"
       by: "by"
-
+    _header:
+      account: "Account"
   users:
     new:
       sigup: "Sign up"
       content_new: "This will be a signup page for new users."
       create_account: "Create my account"
       confirm: "Confirmation"
-
     _error_messages:
       _error_content: "The form contains"
-
-
-
-
+      error: "error"
+  sessions:
+    login_flash: "Invalid email/password combination"
+    new:
+      newuser: "New user?"
+      sig: "Sign up now!"
