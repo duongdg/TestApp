@@ -13,6 +13,7 @@ en:
   profile: "Profile"
   setting: "Settings"
   logout: "Log out"
+  mot: "1"
   static_pages:
     home:
       title: "Home Page"
@@ -47,3 +48,5 @@ en:
     new:
       newuser: "New user?"
       sig: "Sign up now!"
+      remember: "Remember me on this computer"
+
