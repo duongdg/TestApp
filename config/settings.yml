@@ -6,4 +6,5 @@ email:
   maximum_value: 255
 password:
   minximum_value: 6
-
+us_index:
+  size: 50

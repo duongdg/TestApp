@@ -1,11 +1,16 @@
 en:
   title: "Page"
   title_content: "Ruby on Rails Tutorial TestAPP"
+  pro_update: "Profile updated"
+  please: "Please log in."
   about: "About"
+  sure: "You sure?"
   contact: "Contact"
+  all_user: "All user"
   home: "Home"
   help: "Help"
   login: "Log in"
+  destroy_user: "User deleted"
   new: "News"
   users1: "Users"
   no_user: "No User!"
@@ -13,7 +18,6 @@ en:
   profile: "Profile"
   setting: "Settings"
   logout: "Log out"
-  mot: "1"
   static_pages:
     home:
       title: "Home Page"
@@ -40,6 +44,14 @@ en:
       content_new: "This will be a signup page for new users."
       create_account: "Create my account"
       confirm: "Confirmation"
+    edit:
+      title_edit: "Edit user"
+      save_change: "Save changes"
+      ed_content: "Update your profile"
+      ed_change: "Change"
+    index:
+    _user:
+      delete: "delete"
     _error_messages:
       _error_content: "The form contains"
       error: "error"
