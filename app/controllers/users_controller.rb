@@ -1,7 +1,14 @@
 class UsersController < ApplicationController
+  before_action :logged_in_user, except: [:show, :new, :create]
+  before_action :correct_user, only: [:edit, :update]
+  before_action :admin_user, only: :destroy
+  before_action :find_by_id, except: [:index, :new, :create]
+
+  def index
+    @users = User.paginate(page: params[:page], :per_page => 15).order "created_at desc"
+  end
 
   def show
-    @user = User.find_by id: params[:id]
     if @user.nil?
       flash[:danger] = t "no_user"
       redirect_to root_url
@@ -24,10 +31,53 @@ class UsersController < ApplicationController
 
   end
 
-    private
+  def edit
+  end
 
-      def user_params
-        params.require(:user).permit :name, :email, :password, :password_confirm
-      end
+  def update
+    if @user.update_attributes user_params
+      flash[:success] = t "pro_update"
+      redirect_to @user
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @user.destroy
+    flash[:success] = t "destroy_user"
+    redirect_to users_url
+  end
+
+  private
+
+  def find_by_id
+    @user = User.find_by id: params[:id]
+  end
+
+  def user_params
+    params.require(:user).permit :name, :email, :password, :password_confirm
+  end
+
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:danger] = t "please"
+      redirect_to login_url
+    end
+  end
+
+  def current_user? user
+    user == current_user
+  end
+
+  def correct_user
+    @user = User.find_by id: params[:id]
+    redirect_to root_url unless current_user? @user
+  end
+
+  def admin_user
+    redirect_to root_url unless current_user.admin?
+  end
 
 end

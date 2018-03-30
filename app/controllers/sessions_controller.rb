@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       log_in user
       params[:session][:remember_me] == Settings.session_ctl_number ? remember(user) : forget(user)
-      redirect_to user
+      redirect_back_or user
     else
       flash[:danger] = t ".login_flash"
       render :new
