@@ -8,4 +8,6 @@ password:
   minximum_value: 6
 us_index:
   size: 50
+img:
+  size: 1024
 host: "localhost:3000"

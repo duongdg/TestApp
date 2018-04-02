@@ -12,6 +12,8 @@ class UsersController < ApplicationController
     if @user.nil?
       flash[:danger] = t "no_user"
       redirect_to root_url
+    else
+      @microposts = @user.microposts.paginate(page: params[:page])
     end
   end
 
