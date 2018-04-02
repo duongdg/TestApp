@@ -2,6 +2,9 @@ en:
   localhost: "localhost:3000"
   title: "Page"
   hi: "Hi"
+  submit: "Submit"
+  update_pass: "Update password"
+  reset_password: "Password reset"
   active_link: "Activate"
   mail_to: "to@example.org"
   ac_active: "Account activation"
@@ -29,6 +32,11 @@ en:
   profile: "Profile"
   setting: "Settings"
   logout: "Log out"
+  pass_has_reset: "Password has been reset."
+  pass_has_reset_expired: "Password reset has expired."
+  pass_reset_cnt: "Email sent with password reset instructions"
+  pass_reset_not: "Email address not found"
+  cant_empty: "can't be empty"
   static_pages:
     home:
       title: "Home Page"
@@ -72,7 +80,28 @@ en:
       newuser: "New user?"
       sig: "Sign up now!"
       remember: "Remember me on this computer"
+      forgot_pass: "(forgot password)"
   account_activation:
     wellcome_act: "Welcome to the Sample App! Click on the link below to activate your account:
       "
+  user_mailer:
+    password_reset:
+      title_pass_reset: "Password reset"
+      content_1_pass_reset: "To reset your password click the link below:"
+      content_2_pass_reset: "This link will expire in two hours."
+      content_3_pass_reset: "If you did not request your password to be reset, please ignore this email and
+        your password will stay as it is."
+      pass_text_content1: "To reset your password click the link below:"
+      pass_text_content2: "This link will expire in two hours."
+      pass_text_content3: "If you did not request your password to be reset, please ignore this email and
+        your password will stay as it is."
+  password_reset:
+    edit:
+      reset_pass: "Reset password"
+      confim_text: "Confirmation"
+    new:
+      forgot_password: "Forgot password"
+
+
+
 
