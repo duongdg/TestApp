@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: [:show, :new, :create]
-  before_action :correct_user, only: [:edit, :update]
+  before_action :logged_in_user, except: %i(new create show)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
-  before_action :find_by_id, except: [:index, :new, :create]
+  before_action :find_by_id, except: %i(index new create)
 
   def index
     @users = User.paginate(page: params[:page], :per_page => 15).order "created_at desc"
@@ -22,9 +22,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "title_content"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "please_check"
+      redirect_to root_url
     else
       render :new
     end

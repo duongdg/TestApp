@@ -1,10 +1,19 @@
 en:
   title: "Page"
+  hi: "Hi"
+  active_link: "Activate"
+  mail_to: "to@example.org"
+  ac_active: "Account activation"
   title_content: "Ruby on Rails Tutorial TestAPP"
   pro_update: "Profile updated"
   please: "Please log in."
+  acc_active: "Account activated!"
+  ivl_link: "Invalid activation link"
+  mails_send: "noreply@example.com"
   about: "About"
+  not_active: "Account not activated. Check your email for the activation link."
   sure: "You sure?"
+  please_check: "Please check your email to activate your account."
   contact: "Contact"
   all_user: "All user"
   home: "Home"
@@ -61,4 +70,7 @@ en:
       newuser: "New user?"
       sig: "Sign up now!"
       remember: "Remember me on this computer"
+  account_activation:
+    wellcome_act: "Welcome to the Sample App! Click on the link below to activate your account:
+      "
 
