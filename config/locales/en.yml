@@ -1,5 +1,7 @@
 en:
-  localhost: "localhost:3000"
+  following: "following"
+  follow: "Follow"
+  unfollow: "Unfollow"
   title: "Page"
   micropost: "micropost"
   hi: "Hi"
@@ -50,6 +52,7 @@ en:
       email: "Ruby on Rails Tutorial"
       tetsapp: "test app."
       sigup: "Sing up now!"
+      mcr_feed: "Micropost Feed"
     help:
       help: "Wellcome Help Page"
     contact:
@@ -80,6 +83,8 @@ en:
     _error_messages:
       _error_content: "The form contains"
       error: "error"
+    show:
+      show_mcr: "Microposts"
   sessions:
     login_flash: "Invalid email/password combination"
     new:
