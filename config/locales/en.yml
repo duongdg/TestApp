@@ -1,6 +1,10 @@
 en:
+  localhost: "localhost:3000"
   title: "Page"
+  micropost: "micropost"
   hi: "Hi"
+  placeholder: "Compose new micropost..."
+  view_my_profile: "view my profile"
   submit: "Submit"
   update_pass: "Update password"
   password_forgot: "Forgot password"
@@ -37,6 +41,9 @@ en:
   pass_reset_cnt: "Email sent with password reset instructions"
   pass_reset_not: "Email address not found"
   cant_empty: "can't be empty"
+  mcr_create: "Micropost created!"
+  mcr_delete: "Micropost deleted"
+  less_than: "should be less than 5MB"
   static_pages:
     home:
       title: "Home Page"
@@ -101,7 +108,11 @@ en:
       confim_text: "Confirmation"
     new:
       forgot_password: "Forgot password"
-
-
-
-
+  micropost:
+    _micropost:
+      post: "Posted"
+      ago: "ago."
+      alert_infor: "Maximum file size is 5MB. Please choose a smaller file."
+  shared:
+    _micropost_form:
+      img: "image/jpeg,image/gif,image/png"
